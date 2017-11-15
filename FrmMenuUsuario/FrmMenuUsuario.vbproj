@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65A86E2E-4ACA-47D4-91E2-F4E1DB24C6DC}</ProjectGuid>
+    <ProjectGuid>{ECA15F5A-95C0-4B60-90FD-6ACF8E152C13}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>AplicacionAnimals.My.MyApplication</StartupObject>
-    <RootNamespace>AplicacionAnimals</RootNamespace>
-    <AssemblyName>AplicacionAnimals</AssemblyName>
+    <StartupObject>FrmMenuUsuario.My.MyApplication</StartupObject>
+    <RootNamespace>FrmMenuUsuario</RootNamespace>
+    <AssemblyName>FrmMenuUsuario</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>AplicacionAnimals.xml</DocumentationFile>
+    <DocumentationFile>FrmMenuUsuario.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>AplicacionAnimals.xml</DocumentationFile>
+    <DocumentationFile>FrmMenuUsuario.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -72,35 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAnimal.Designer.vb">
-      <DependentUpon>FrmAnimal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAnimal.vb">
+    <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuUsuario.Designer.vb">
-      <DependentUpon>FrmMenuUsuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMenuUsuario.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmUbicacion.Designer.vb">
-      <DependentUpon>FrmUbicacion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmUbicacion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmUsuario.Designer.vb">
-      <DependentUpon>FrmUsuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmUsuario.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLogin.Designer.vb">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -118,24 +94,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="VariablesGlobales.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmAnimal.resx">
-      <DependentUpon>FrmAnimal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuUsuario.resx">
-      <DependentUpon>FrmMenuUsuario.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmUbicacion.resx">
-      <DependentUpon>FrmUbicacion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuario.resx">
-      <DependentUpon>FrmUsuario.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
-      <DependentUpon>FrmLogin.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -154,16 +114,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Controlador\Controlador.vbproj">
-      <Project>{42D2572F-3089-42F1-9C23-0005C1EAF404}</Project>
-      <Name>Controlador</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Modelo\Datos.vbproj">
-      <Project>{4D7614EE-AA5F-447D-AAF3-11907F558704}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
